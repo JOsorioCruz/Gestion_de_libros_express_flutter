@@ -73,7 +73,7 @@ Construir un stack completo y containerizado — API RESTful en Node.js con Expr
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/JOsorioCruz/Gestion_de_libros_express_flutter.git
 cd actividad_4
 ```
 
