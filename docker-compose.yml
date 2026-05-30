@@ -1,0 +1,20 @@
+services:
+
+  api:
+    build: .
+    container_name: libros-api
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    restart: always
+
+  frontend:
+    build: ./flutter_app
+    container_name: libros-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: always
